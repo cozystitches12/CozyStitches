@@ -8,7 +8,7 @@
 // ── GITHUB SETTINGS ──────────────────────────────────────────
 // Your GitHub username and repository name
 const GITHUB_USER = 'cozystitches12';
-const GITHUB_REPO = 'cozystitches12';
+const GITHUB_REPO = 'cozystitches';
 const GITHUB_BRANCH = 'main';
 
 // GitHub API base URL
