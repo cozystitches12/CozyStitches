@@ -1,1 +1,61 @@
-Test
+media:
+  input: images
+  output: /images
+
+content:
+  - name: posts
+    label: Blog Posts
+    path: _posts
+    type: collection
+    view:
+      fields: [title, date, category]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: category
+        label: Category
+        type: select
+        options:
+          values: [amigurumi, blankets, tutorials, hauls, accessories, home, wip]
+      - name: excerpt
+        label: Short preview
+        type: string
+      - name: body
+        label: Post content
+        type: rich-text
+      - name: image
+        label: Photo
+        type: image
+
+  - name: gallery
+    label: Gallery Projects
+    path: _gallery
+    type: collection
+    view:
+      fields: [title, date, category]
+    fields:
+      - name: title
+        label: Project name
+        type: string
+        required: true
+      - name: date
+        label: Date completed
+        type: string
+      - name: category
+        label: Category
+        type: select
+        options:
+          values: [amigurumi, blankets, accessories, home, wip]
+      - name: desc
+        label: Description
+        type: text
+      - name: image
+        label: Photo
+        type: image
+        required: true
